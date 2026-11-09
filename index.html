@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>火力发电厂设备分布</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <span class="wing"></span>
+    <h1>火力发电厂设备分布</h1>
+    <span class="wing right"></span>
+  </header>
+  <main class="workspace">
+    <div class="stage">
+      <div class="scene" id="scene">
+        <img src="assets/plant.jpg" alt="火力发电厂三维厂区模型" id="plant" />
+        <svg class="leaders" id="leaders" aria-hidden="true"></svg>
+        <div class="pins" id="pins"></div>
+        <div class="tags" id="tags"></div>
+      </div>
+    </div>
+    <aside class="panel" id="panel">
+      <div class="detail" id="detail"></div>
+      <div class="filters" id="filters" role="tablist" aria-label="按系统筛选"></div>
+      <div class="list" id="list"></div>
+      <p class="footnote">名称按构筑物外形和火电厂常见布置识别，用来对照看图。靠左记为 1 号、靠右记为 2 号，只为区分，不是铭牌编号。</p>
+    </aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
