@@ -28,9 +28,29 @@ button, input { font-family: inherit; }
   align-items: center;
   justify-content: center;
   gap: 16px;
+  position: relative;
   background: linear-gradient(180deg, #08203f 0%, #0a2c56 100%);
   border-bottom: 1px solid rgba(90, 190, 255, 0.55);
   box-shadow: 0 1px 0 rgba(160, 220, 255, 0.25) inset;
+}
+
+.download {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #eaf6ff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  padding: 5px 10px;
+  border: 1px solid rgba(110, 198, 255, 0.85);
+  border-radius: 2px;
+  background: rgba(20, 70, 120, 0.45);
+}
+
+.download:hover {
+  background: rgba(40, 120, 190, 0.55);
 }
 
 .topbar h1 {
@@ -313,7 +333,8 @@ button, input { font-family: inherit; }
   .workspace { flex-direction: column; height: auto; min-height: calc(100% - 48px); }
   .scene { width: min(100%, calc(68vh * 1024 / 495)); }
   .pin { width: 12px; height: 12px; }
-  .topbar h1 { font-size: 15px; letter-spacing: 0.12em; text-indent: 0.12em; }
+  .topbar h1 { font-size: 15px; letter-spacing: 0.08em; text-indent: 0.08em; }
+  .download { right: 8px; padding: 4px 8px; font-size: 12px; }
   .wing { width: 36px; }
   .panel { width: 100%; border-left: 0; border-top: 1px solid rgba(90, 186, 255, 0.38); }
   .list { max-height: 42vh; }
